@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo '#include "binary_trees.h"' > $1
+echo $2 >> $1
+vim $1
