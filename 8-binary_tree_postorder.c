@@ -1,5 +1,10 @@
 #include "binary_trees.h"
 
+/**
+ * binary_tree_postorder - Display a binary tree using postorder
+ * @tree: root of BT
+ * @func: function
+ */
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 {
 	if (tree == NULL || func == NULL)

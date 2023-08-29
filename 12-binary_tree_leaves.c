@@ -1,8 +1,16 @@
 #include "binary_trees.h"
 
+/**
+ * binary_tree_leaves - Count the amount of leaves
+ * a binary tree has
+ * @tree: BT root
+ *
+ * Return: number of leaves
+ */
 size_t binary_tree_leaves(const binary_tree_t *tree)
 {
 	size_t lNode = 0, rNode = 0;
+
 	if (tree == NULL)
 		return (0);
 
