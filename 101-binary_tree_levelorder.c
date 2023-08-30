@@ -31,7 +31,7 @@ size_t tree_depth(const binary_tree_t *tree)
  */
 void print_node(const binary_tree_t *tree, int level, void (*func)(int))
 {
-	if (tree == NULL || func == NULL)
+	if (tree == NULL)
 		return;
 	if (level == 0)
 		func(tree->n);
@@ -47,9 +47,6 @@ void print_node(const binary_tree_t *tree, int level, void (*func)(int))
  */
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
-	if (tree == NULL || func == NULL)
-		return;
-
 	int height = 0, i = 0;
 
 	height = tree_depth(tree);
