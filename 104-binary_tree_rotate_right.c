@@ -1,5 +1,11 @@
 #include "binary_trees.h"
 
+/**
+ * binary_tree_rotate_right - Rotate a tree right
+ * @tree: pointer to root of a tree
+ *
+ * Return: pointer to new root
+ */
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree)
 {
 	binary_tree_t *temp = NULL, *temp2 = NULL;
