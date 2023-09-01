@@ -1,5 +1,12 @@
 #include "binary_trees.h"
 
+/**
+ * binary_tree_node - Create a BT new node
+ * @parent: Hold pointer to parent node
+ * @value: value to be saved in the new node
+ *
+ * Return: Pointer to new node
+ */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 	binary_tree_t *node = NULL;
